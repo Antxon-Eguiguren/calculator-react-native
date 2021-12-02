@@ -54,7 +54,7 @@ export const CalculatorScreen = () => {
         ]}
         numberOfLines={1}
         adjustsFontSizeToFit>
-        {intermediateResult}
+        {intermediateResult || ' '}
       </Text>
       <Text
         style={[
@@ -63,7 +63,7 @@ export const CalculatorScreen = () => {
         ]}
         numberOfLines={1}
         adjustsFontSizeToFit>
-        {result}
+        {result || ' '}
       </Text>
       <View style={styles.row}>
         <CustomButton text="C" color={colors.lightgray} operation={clear} />
@@ -124,14 +124,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   switch: {
-    display: 'flex',
-    flexDirection: 'column',
     alignItems: 'center',
-    marginBottom: 80,
+    position: 'absolute',
+    width: '100%',
+    top: 30,
   },
   switch_img: {
-    width: 35,
-    height: 35,
+    width: 40,
+    height: 40,
     marginBottom: 5,
   },
 });
