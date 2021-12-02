@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     width: '100%',
-    top: 30,
+    top: 10,
   },
   switch_img: {
     width: 40,
